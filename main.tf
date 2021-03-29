@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     # Lembre de trocar o bucket para o seu, não pode ser o mesmo nome
-    bucket = "bucketheldo0.1"
+    bucket = "bucketheldo0.2"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
