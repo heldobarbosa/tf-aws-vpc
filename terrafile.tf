@@ -6,7 +6,7 @@ module "network" {
   enable_dns_hostnames = true                       #"Habilita hostnames DNS na VPC"
   enable_dns_support = true                         #"Habilita suporte a DNS na VPC"
   instance_tenancy = "default"                      #"Tipo de locação de instâncias criadas na VPC"
-  enable_nat_gateway = true                         #"Habilita criação de um NAT Gateway; requer ao menos uma subnet pública"
+  enable_nat_gateway = false                         #"Habilita criação de um NAT Gateway; requer ao menos uma subnet pública"
   external_nat_gateway_eip_id = ""                  #"ID de um Elastic IP pré-existente para o NAT Gateway; caso não definido, um novo Elastic IP será criado"
   enable_vpn_gateway = false                        #"Habilita criação de um VPN Gateway (VGW) para a VPC"
   vpn_gateway_id = ""                               #"ID de um VPN Gateway existente para vincular à VPC; requer que `enable_vpn_gateway` seja habilitada"
