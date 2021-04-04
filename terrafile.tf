@@ -14,7 +14,7 @@ module "network" {
   enable_private_route_table_propagation = false    #"Habilita propagação de rotas do VPN Gateway para a route table privada"
   enable_public_route_table_propagation = false     #"Habilita propagação de rotas do VPN Gateway para a route table pública"
   enable_database_route_table_propagation = false   #"Habilita propagação de rotas do VPN Gateway para a route table de bancos de dados"
-  private_subnets = ["10.0.2.0/24"]                 #"Lista de CIDRs das subnets privadas"
+  private_subnets = ["10.0.3.0/24"]                 #"Lista de CIDRs das subnets privadas"
   private_subnet_names = []                         #"Lista de nomes das subnets privadas"
   private_subnet_suffix = "private-subnet"          #"Sufixo para os nomes das subnets privadas"
   private_subnet_tags = {}                          #"Tags aplicadas às subnets privadas"
